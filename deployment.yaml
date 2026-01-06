@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: moja-strona
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: web
@@ -13,8 +13,8 @@ spec:
         app: web
     spec:
       containers:
-      - name: nginx
-        image: nginx:alpine
+      - name: httpd
+        image: httpd:alpine
         ports:
         - containerPort: 80
 ---
