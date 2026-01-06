@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: moja-strona
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: web
